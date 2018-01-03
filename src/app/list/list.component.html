@@ -1,0 +1,35 @@
+<div class="thumbnail">
+  <figure><img src="assets/images/{{ data.image }}.jpg" alt="crib thumbnail" width="280" height="200"></figure>
+  <div class="caption">
+      <h4>
+        <span class="label label-primary">
+          {{ data.type }}
+        </span>
+        <span class="label">
+          <i class="glyphicon glyphicon-bed"></i> {{ data.bedrooms }} Beds
+        </span>
+        <span class="label">
+          <i class="glyphicon glyphicon-object-align-top"></i> {{ data.bathrooms  }} Baths
+        </span>
+      </h4>
+      <h4>
+        <span class="label"><i class="glyphicon glyphicon-tag"></i> 
+          {{ data.price | currency:'USD':true }}</span>
+          <span class="label"><i class="glyphicon glyphicon-th-large"></i> 
+          {{ data.area}} Sqft</span>
+      </h4>
+      <h4 style="color:#cccccc;">
+        <i class="glyphicon glyphicon-home"></i> 
+          {{ data.address }}
+      </h4>
+      
+      <hr>
+
+      <button 
+        class="btn btn-sm btn-success">
+        Details
+      </button>
+    </div>
+</div>
+
+
